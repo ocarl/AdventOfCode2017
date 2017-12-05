@@ -9,9 +9,9 @@ output = ''
 for subList in mainList:
     mySum = 0
     key = ''
-    for it in subList:
-        key = key + it[0] + ' '
-        mySum = mySum + it[1]
+    for name, value in subList:
+        key = key + name + ' '
+        mySum = mySum + value
     output = compileOutput(output, key, mySum)
 
 print(output[:-2])
